@@ -298,7 +298,7 @@ func main() {
 	// fix matches
 	fixedSize := 0
 	for plexItem, pvrItem := range itemsToFix {
-		newGuid := fmt.Sprintf("%s?lang=en", getPreferredGuid(pvrItem.GUID))
+		newGuid := fmt.Sprintf("%s?lang=de", getPreferredGuid(pvrItem.GUID))
 
 		l.Debug().
 			Str("plex_path", plexItem.Path).
